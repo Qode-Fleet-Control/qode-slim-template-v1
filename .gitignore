@@ -1,3 +1,10 @@
-.env
+.idea/
+.vscode/
+/coverage/
+/vendor/
+/logs/*
+!/logs/README.md
+.phpunit.result.cache
 .fleet/
 .fleet-deploy.log
+*.log
