@@ -1,0 +1,12 @@
+.git
+.github
+.fleet
+.fleet-deploy.log
+vendor
+var/cache
+logs/*
+!logs/README.md
+coverage
+.env
+*.log
+.phpunit.result.cache
