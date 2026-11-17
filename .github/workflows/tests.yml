@@ -10,10 +10,12 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                php: [7.4, 8.0, 8.1]
+                # The image runs PHP 8.4 (Dockerfile) and composer.lock needs >= 8.2; 7.4-8.1 could
+                # never install it, so this job failed on every push.
+                php: [8.4]
                 experimental: [false]
                 include:
-                    - php: 8.1
+                    - php: 8.4
                       analysis: true
 
         steps:
